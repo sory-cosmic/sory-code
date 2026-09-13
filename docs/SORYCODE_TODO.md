@@ -1,0 +1,28 @@
+# SoryCode — TODO central
+
+- [x] Audit OpenCode (phase 1)
+- [x] Architecture runtime (abstraction `Kind/Config/Adapter` + registre)
+- [x] Persistance DB `project.environment` + API `PATCH /project/:projectID`
+- [x] UI : envoi réel de `environment` via `project.update` + dialogue V2 partout
+- [x] UI : environnement visible + modifiable depuis l'écran nouvelle-session (badge)
+- [ ] Local runtime (valider fichiers/terminal/processus/build/tests/Git via target local)
+- [ ] Rendre `EnvironmentManager` persistant (DB) et autoritaire pour le workspace runtime
+- [x] Codespaces (device flow OAuth comme vscode github-authentication + API create/list/wait, provisionCodespaceEnvironment, dual shell codespace$/local$)
+- [x] Sandbox (contrat provider Vercel/E2B + factory, voir docs/SANDBOX_RUNTIME.md)
+- [x] Sandbox (intégration via `integration.connect.key` + persisté en credential store)
+- [x] Rendre `EnvironmentManager` persistant (DB = source de vérité)
+- [x] Sandbox (auto-provision : create → URL persistée sur `Project.environment`)
+- [x] Terminal manuel dans le sandbox (shell détaché + read/write pipe)
+- [x] Même panneau terminal physique → exécution sandbox/codespace quand session distante (badge + routage pty.create/connect, 2 shells / 2 filesystems comme vscode remote)
+- [ ] Sandbox (boot SoryCode workspace server dans le sandbox → shell persistant + PTY live stream)
+- [ ] Project integration (runtime récupérable de façon fiable, migrations si besoin)
+- [ ] AI integration (agents/outils via runtime projet, sans contournement)
+- [ ] Terminal (exécution distante, logs, stop/restart, exit codes)
+- [ ] Processes (démarrer/état/logs/arrêter/redémarrer/ports)
+- [ ] Build (build/test/dev-server/port-forwarding/logs via runtime)
+- [ ] Servers (détection/exposition/proxy/URLs/arrêt)
+- [ ] Git (status/diff/branches/commits/remote, permissions respectées)
+- [ ] SoryCode UI (projet/IA/runtime/fichiers/terminal/processus/Git/builds/serveurs visibles)
+- [ ] Android remote (API/auth/sessions/reconnexion/streaming/terminal distant)
+- [ ] E2E tests (scénarios Local/Codespaces/Sandbox/Android)
+- [ ] Documentation finale
